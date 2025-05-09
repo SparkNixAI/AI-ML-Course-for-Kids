@@ -1,0 +1,1310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SparkNix - AI & Machine Learning for Kids</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Download Section Styles */
+        .download-section {
+            background-color: #f8f9fa;
+            padding: 40px 0;
+            text-align: center;
+        }
+        .download-section .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        .download-section h2 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+            color: #1a1a1a;
+        }
+        .download-section h2 .text-highlight {
+            color: #007bff;
+        }
+        .download-section p {
+            font-size: 1.1rem;
+            color: #555;
+            margin-bottom: 30px;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .download-section .btn-download {
+            display: inline-block;
+            padding: 12px 24px;
+            background-color: #007bff;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 1.1rem;
+            transition: background-color 0.3s ease;
+        }
+        .download-section .btn-download:hover {
+            background-color: #0056b3;
+        }
+
+        /* Responsive Styles */
+        @media (max-width: 1024px) {
+            .download-section h2 {
+                font-size: 1.8rem;
+            }
+            .download-section p {
+                font-size: 1rem;
+            }
+        }
+        @media (max-width: 768px) {
+            header .container {
+                flex-direction: column;
+                align-items: center;
+            }
+            .nav-links {
+                flex-direction: column;
+                gap: 10px;
+                margin-top: 10px;
+            }
+            .hero-content h1 {
+                font-size: 2rem;
+            }
+            .hero-content p {
+                font-size: 1rem;
+            }
+            .cta-buttons {
+                flex-direction: column;
+                gap: 10px;
+            }
+            .benefits-grid, .projects-grid, .testimonials-grid {
+                grid-template-columns: 1fr;
+            }
+            .video-container {
+                max-width: 100%;
+            }
+            .download-section {
+                padding: 30px 0;
+            }
+            .download-section h2 {
+                font-size: 1.5rem;
+            }
+            .download-section p {
+                font-size: 0.9rem;
+            }
+            .download-section .btn-download {
+                padding: 10px 20px;
+                font-size: 1rem;
+            }
+        }
+        @media (max-width: 480px) {
+            .hero-content h1 {
+                font-size: 1.5rem;
+            }
+            .hero-content p {
+                font-size: 0.9rem;
+            }
+            .feature-pills, .tag-pills {
+                flex-direction: column;
+                align-items: center;
+            }
+            .pill, .tag-pill {
+                width: 100%;
+                max-width: 300px;
+                margin-bottom: 10px;
+            }
+            .footer-content {
+                flex-direction: column;
+                text-align: center;
+            }
+            .footer-links {
+                flex-direction: column;
+                gap: 20px;
+            }
+            .video-container video {
+                width: 100%;
+                height: auto;
+            }
+        }
+
+        /* Video Container Styles for Vertical Video */
+        .video-container {
+            max-width: 400px;
+            margin: 0 auto;
+            position: relative;
+            overflow: hidden;
+            border-radius: 10px;
+        }
+        .video-container video {
+            width: 100%;
+            height: auto;
+            display: block;
+            aspect-ratio: 9 / 16;
+        }
+
+        /* Live Sessions Section Styles */
+.live-sessions-section {
+    background-color: #ffffff; /* Clean white background for contrast */
+    padding: 50px 0; /* Ample padding for prominence */
+    text-align: center; /* Center alignment for balance */
+}
+
+.live-sessions-heading {
+    font-size: 3rem; /* Very large font size for maximum visibility */
+    font-weight: 800; /* Extra bold for impact */
+    color: #1a1a1a; /* Dark color for high contrast */
+    margin-bottom: 20px; /* Space below heading */
+    text-transform: uppercase; /* Uppercase for emphasis */
+    line-height: 1.2; /* Tight line height for bold look */
+}
+
+.live-sessions-subtext {
+    font-size: 1rem; /* Slightly larger than body text for clarity */
+    color: #555; /* Softer color for subtext */
+    max-width: 600px; /* Constrain width for readability */
+    margin: 0 auto; /* Center the subtext */
+    line-height: 1.6; /* Improved readability */
+}
+
+/* Responsive Styles */
+@media (max-width: 1024px) {
+    .live-sessions-heading {
+        font-size: 2.5rem; /* Slightly smaller but still prominent */
+    }
+    .live-sessions-subtext {
+        font-size: 1.1rem;
+    }
+}
+@media (max-width: 768px) {
+    .live-sessions-section {
+        padding: 40px 0; /* Reduced padding for smaller screens */
+    }
+    .live-sessions-heading {
+        font-size: 2rem; /* Adjusted for smaller screens */
+    }
+    .live-sessions-subtext {
+        font-size: 1rem;
+    }
+}
+@media (max-width: 480px) {
+    .live-sessions-section {
+        padding: 30px 0; /* Further reduced padding */
+    }
+    .live-sessions-heading {
+        font-size: 1.6rem; /* Still bold and visible on mobile */
+    }
+    .live-sessions-subtext {
+        font-size: 0.9rem; /* Readable on small screens */
+    }
+}
+
+    </style>
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo">
+                    <img src="assets/sparknix-logo.png" alt="SparkNix Logo">
+                    <span>SparkNix</span>
+                </div>
+                <div class="nav-links">
+                    <a href="#curriculum">Curriculum</a>
+                    <a href="#benefits">Benefits</a>
+                    <a href="#features">Features</a>
+                    <a href="#testimonials">Testimonials</a>
+                    <a href="https://wa.me/923099224477?text=Hi!%20I'm%20interested%20in%20enrolling%20my%20child%20in%20the%2015-week%20Kids'%20AI%20%26%20Machine%20Learning%20Course%20offered%20by%20Sparknix.%20Could%20you%20please%20share%20details%20about%20the%20curriculum%2C%20class%20timings%2C%20and%20how%20to%20get%20started%3F" class="btn-enroll">Enroll Now</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Your Child's Gateway to a <span class="text-gradient">Tech-Driven World</span></h1>
+                <p>Empower your child with a 15-week AI & Machine Learning course designed for ages 11-14, building the skills to shape tomorrow's world.</p>
+                <div class="cta-buttons">
+                    <a href="https://wa.me/923099224477?text=Hi!%20I'm%20interested%20in%20enrolling%20my%20child%20in%20the%2015-week%20Kids'%20AI%20%26%20Machine%20Learning%20Course%20offered%20by%20Sparknix.%20Could%20you%20please%20share%20details%20about%20the%20curriculum%2C%20class%20timings%2C%20and%20how%20to%20get%20started%3F" class="btn-primary">Enroll Now</a>
+                    <a href="#curriculum" class="btn-secondary">View Curriculum <span class="arrow-icon">→</span></a>
+                </div>
+                <div class="enrollment-info">
+                    <div class="avatar-group">
+                        <span class="avatar" style="background-color: #74C0FC;">MS</span>
+                        <span class="avatar" style="background-color: #A9E34B;">KL</span>
+                        <span class="avatar" style="background-color: #FF6B6B;">BN</span>
+                    </div>
+                    <span>50+ students enrolled this month</span>
+                </div>
+            </div>
+        </div>
+        <div class="background-shapes">
+            <div class="shape shape-1"></div>
+            <div class="shape shape-2"></div>
+            <div class="shape shape-3"></div>
+            <div class="shape shape-4"></div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features" id="features">
+        <div class="feature-pills">
+            <div class="pill">15-week comprehensive curriculum</div>
+            <div class="pill">4 interactive sessions weekly</div>
+            <div class="pill">Expert instructors & mentors</div>
+            <div class="pill">Ages 11-14 focused learning</div>
+        </div>
+    </section>
+
+    <!-- Live Sessions Section -->
+<section class="live-sessions-section">
+    <div class="container">
+        <h6 class="live-sessions-heading">Personalized 1-on-1 Live Sessions</h6>
+        <p class="live-sessions-subtext"></p>
+    </div>
+</section>
+
+
+    <!-- Why This Course Section -->
+    <section class="why-section">
+        <div class="container">
+            <h2>Why This Course is <span class="text-special">Special</span></h2>
+            <p class="section-intro">In today's world, technology is everywhere—from video games to helpful apps. <br>Learning tech skills early is like giving your child a superpower.</p>
+            <div class="benefits-grid">
+                <div class="benefit-card">
+                    <div class="icon-container">
+                        <div class="icon code-icon"></div>
+                    </div>
+                    <h3>Create AI Apps</h3>
+                    <p>Students will build AI-powered applications through a kid-friendly interface that uses drag-and-drop blocks. They'll create apps that can suggest activities, identify patterns, and solve real-world problems - all without complex coding!</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="icon-container">
+                        <div class="icon learn-icon"></div>
+                    </div>
+                    <h3>Learn to Code</h3>
+                    <p>Experience coding through a block-based programming environment. Kids learn by dragging and connecting blocks, making coding fun and accessible. Our visual programming approach helps students understand core concepts without getting overwhelmed.</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="icon-container">
+                        <div class="icon train-icon"></div>
+                    </div>
+                    <h3>Train AI Models</h3>
+                    <p>Students will learn to train their own AI models through simple drag-and-drop interfaces. They'll understand how AI thinks and learns, all through kid-friendly tools that make complex concepts easy to grasp!</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="icon-container">
+                        <div class="icon solve-icon"></div>
+                    </div>
+                    <h3>Solving Real Problems</h3>
+                    <p>Students will apply their AI and coding
+
+                    skills to create solutions for their communities, schools, and the environment. Using our simple drag-and-drop tools, young innovators will build projects that make a real difference.</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="icon-container">
+                        <div class="icon interaction-icon"></div>
+                    </div>
+                    <h3>Parent-Teacher Interaction</h3>
+                    <p>You're part of your child's journey! Join our periodic parent-teacher interactions during expert sessions to see their progress and discover how AI shapes the world. Together, we'll celebrate achievements.</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="icon-container">
+                        <div class="icon future-icon"></div>
+                    </div>
+                    <h3>Future-Ready Skills</h3>
+                    <p>Technology is the future. By learning AI now, your child will stay ahead, ready to lead in a dynamic job market and apply their skills to any passion—be it science, art, or social impact.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Curriculum Section -->
+    <section class="curriculum-section" id="curriculum">
+        <div class="container">
+            <h2>The 15-Week <span class="text-highlight">Adventure</span></h2>
+            <p class="section-intro">Our comprehensive curriculum guides students through an exciting journey of AI and machine learning concepts, with hands-on projects and real-world applications.</p>
+            <p class="curriculum-subtitle">Each week includes four fully customizable sessions tailored to your child's learning pace and interests.</p>
+            <div class="curriculum-accordion">
+                <div class="accordion-item">
+                    <div class="accordion-header">
+                        <span class="week-number">1</span>
+                        <h3>Introduction to Artificial Intelligence and Machine Learning</h3>
+                        <span class="accordion-toggle"></span>
+                    </div>
+                    <div class="accordion-content">
+                        <p>Students begin their AI journey by exploring the basics of artificial intelligence and machine learning, understanding how computers can perform smart tasks and learn from examples.</p>
+                        <p class="content-note">These sessions can be customized to match your child's learning style, interests, and pace.</p>
+                        <div class="session">
+                            <h4>Session 1: Understanding Artificial Intelligence</h4>
+                            <p>Students learn what Artificial Intelligence (AI) is—computers doing smart things like recognizing patterns, making choices, or solving problems. They talk about AI in everyday life, like movie suggestions or chatbots, and do fun activities to see how AI works.</p>
+                            <div class="vocabulary">
+                                <h5>Vocabulary:</h5>
+                                <div class="vocab-item">
+                                    <strong>Artificial Intelligence (AI):</strong> When computers act smart and do tasks like recognizing things or guessing what might happen.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="session">
+                            <h4>Session 2: Introduction to Machine Learning</h4>
+                            <p>Students discover machine learning, a part of AI where computers get better by learning from examples. They do hands-on activities, like teaching a virtual robot to spot fish by looking at things like color, and use a step-by-step method to understand how machines learn.</p>
+                            <div class="vocabulary">
+                                <h5>Vocabulary:</h5>
+                                <div class="vocab-item">
+                                    <strong>Machine Learning:</strong> When computers learn from examples to find patterns and make choices without being told exactly what to do.
+                                </div>
+                                <div class="vocab-item">
+                                    <strong>Problem Solving Process:</strong> A clear way to tackle problems by finding the issue, picking data, training a computer, checking results, and thinking about how it affects people.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="session">
+                            <h4>Session 3: Building Mental and Machine Learning Models</h4>
+                            <p>Students think about how they learn new things and compare it to how computers learn. They do a color activity to group things without labels, like computers do, and talk about how computers spot patterns using details.</p>
+                            <div class="vocabulary">
+                                <h5>Vocabulary:</h5>
+                                <div class="vocab-item">
+                                    <strong>Model:</strong> A computer program that makes choices or guesses based on information.
+                                </div>
+                                <div class="vocab-item">
+                                    <strong>Unsupervised Learning:</strong> When a computer finds patterns in information without being given examples with answers.
+                                </div>
+                                <div class="vocab-item">
+                                    <strong>Features:</strong> The details or traits a computer uses to make choices.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="session">
+                            <h4>Session 4: Supervised and Unsupervised Learning</h4>
+                            <p>Students play a game called 'Green Glass Door' to learn how computers use examples with answers to find patterns. They also look at examples to understand the difference between learning with and without human help.</p>
+                            <div class="vocabulary">
+                                <h5>Vocabulary:</h5>
+                                <div class="vocab-item">
+                                    <strong>Supervised Learning:</strong> When a computer learns from examples with answers provided by people.
+                                </div>
+                                <div class="vocab-item">
+                                    <strong>Training:</strong> Giving a computer example to help it get better at making guesses or choices.
+                                </div>
+                                <div class="vocab-item">
+                                    <strong>Label:</strong> The answer or group a computer tries to figure out.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <div class="accordion-header">
+                        <span class="week-number">2</span>
+                        <h3>AI Innovations and Societal Impact</h3>
+                        <span class="accordion-toggle"></span>
+                    </div>
+                    <div class="accordion-content">
+                        <p>Students explore how AI is changing society through real-world applications and discuss the ethical considerations and potential unintended consequences of these technologies.</p>
+                        <p class="content-note">These sessions can be customized to match your child's learning style, interests, and pace.</p>
+                        <div class="session">
+                            <h4>Session 1: Exploring AI Applications</h4>
+                            <p>Students explore real-world AI tools, like Seeing AI, which helps people who can't see well. They look at how AI solves problems, what information it uses, and how it works with people, while talking about a step-by-step way to use AI for big challenges.</p>
+                            <div class="vocabulary">
+                                <h5>Vocabulary:</h5>
+                                <div class="vocab-item">
+                                    <strong>Seeing AI:</strong> An AI tool that helps people who can't see by describing things, reading text, or naming objects.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="session">
+                            <h4>Session 2: Researching AI Innovations</h4>
+                            <p>Students research cool AI tools, looking at what problems they solve, what information they use, and how they affect people. They share what they find and talk about good things and unexpected problems, like fairness or new uses.</p>
+                            <div class="vocabulary">
+                                <h5>Vocabulary:</h5>
+                                <div class="vocab-item">
+                                    <strong>Innovation:</strong> Using AI to make new tools or improve how things work, making tasks easier or better.
+                                </div>
+                                <div class="vocab-item">
+                                    <strong>Unintended Consequence:</strong> Surprising results from AI tools that can be good, bad, or lead to new ideas.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="session">
+                            <h4>Session 3: Understanding AI Decision Models</h4>
+                            <p>Students learn how AI makes choices by looking at a shoe recommender app. They try a simple app that picks shoes randomly, talk about its problems, and suggest ways to make it better, learning how computers use information to guess.</p>
+                        </div>
+                        <div class="session">
+                            <h4>Session 4: Improving Models with Data Patterns</h4>
+                            <p>Students improve their understanding of how AI makes choices by trying a better shoe recommender that uses a decision tree and survey answers. They look at patterns in the answers to suggest shoes and learn how details help make good guesses.</p>
+                            <div class="vocabulary">
+                                <h5>Vocabulary:</h5>
+                                <div class="vocab-item">
+                                    <strong>Decision Tree:</strong> A way for a computer to make choices by asking a series of questions based on details.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <div class="accordion-header">
+                        <span class="week-number">3</span>
+                        <h3>Classification Models in Machine Learning</h3>
+                        <span class="accordion-toggle"></span>
+                    </div>
+                    <div class="accordion-content">
+                        <p>Students dive into classification models, learning how AI can categorize data and applying these skills in practical, engaging activities.</p>
+                        <p class="content-note">These sessions can be customized to match your child's learning style, interests, and pace.</p>
+                        <div class="session">
+                            <h4>Session 1: Introduction to Classification</h4>
+                            <p>Students learn how computers sort things into groups, like separating fruits from vegetables. They do a fun activity to pick details like sweetness to sort foods, acting like a computer that groups things.</p>
+                            <div class="vocabulary">
+                                <h5>Vocabulary:</h5>
+                                <div class="vocab-item">
+                                    <strong>Categorical Data:</strong> Information that can be put into groups, like fruits or vegetables.
+                                </div>
+                                <div class="vocab-item">
+                                    <strong>Classification:</strong> Sorting information into groups based on its details.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="session">
+                            <h4>Session 2: Building and Testing Classification Models</h4>
+                            <p>Students do an activity where they plot foods on a graph using sweetness and ease of eating, then draw a line to separate fruits from vegetables. They test their sorting with different foods and talk about how to make it better.</p>
+                        </div>
+                        <div class="session">
+                            <h4>Session 3: Exploring AI Lab for Classification</h4>
+                            <p>Students start using AI Lab, a tool where they pick details to teach a computer to sort shapes. They try different sets of information, spot patterns in details like color, and teach the computer to get good results, talking about how choosing details matters.</p>
+                            <div class="vocabulary">
+                                <h5>Vocabulary:</h5>
+                                <div class="vocab-item">
+                                    <strong>AI Lab:</strong> A tool for building and testing computer programs by picking details and teaching with information.
+                                </div>
+                                <div class="vocab-item">
+                                    <strong>Accuracy:</strong> How often a computer's guesses are correct, shown as a percentage.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="session">
+                            <h4>Session 4: Building Recommendation Models</h4>
+                            <p>Students use AI Lab to teach a computer to suggest things, like pizza toppings, based on survey answers. They look at information to find strong connections, teach the computer to get at least 80% correct, and talk about how human choices affect results.</p>
+                            <div class="vocabulary">
+                                <h5>Vocabulary:</h5>
+                                <div class="vocab-item">
+                                    <strong>Recommendation Model:</strong> A computer program that guesses what people might like based on patterns in information.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <div class="accordion-header">
+                        <span class="week-number">4</span>
+                        <h3>Creating Apps with Machine Learning</h3>
+                        <span class="accordion-toggle"></span>
+                    </div>
+                    <div class="accordion-content">
+                        <p>Students begin building applications that incorporate machine learning models, focusing on app design and user interaction.</p>
+                        <p class="content-note">These sessions can be customized to match your child's learning style, interests, and pace.</p>
+                        <div class="session">
+                            <h4>Session 1: Introduction to App Lab and Model Integration</h4>
+                            <p>Students learn about App Lab, where they add computer programs to make a book suggestion app. They look at the app's design, talk about survey questions for suggestions, and think about whether questions like gender are okay to use.</p>
+                            <div class="vocabulary">
+                                <h5> Vocabulary:</h5>
+                                <div class="vocab-item">
+                                    <strong>App Lab:</strong> A place to build apps and add computer programs to make guesses.
+                                </div>
+                                <div class="vocab-item">
+                                    <strong>Model Import:</strong> Adding a trained computer program to an app to make it work.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="session">
+                            <h4>Session 2: Building and Customizing the App</h4>
+                            <p>Students use App Lab to add a book suggestion program, create a welcome screen and choose a style. They find important coding parts, like buttons, and test the app to make sure it works right.</p>
+                            <div class="vocabulary">
+                                <h5>Vocabulary:</h5>
+                                <div class="vocab-item">
+                                    <strong>Event:</strong> Something a user does, like clicking a button, that makes the app do something.
+                                </div>
+                                <div class="vocab-item">
+                                    <strong>Welcome Screen:</strong> The first screen in an app that shows information or helps users start.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="session">
+                            <h4>Session 3: Investigating Bias in AI Models</h4>
+                            <p>Students explore a Medical Priority app to see how computer programs can be unfair. They test how the app picks patients, look at details like age or symptoms, and talk about whether the choices seem fair or unfair.</p>
+                            <div class="vocabulary">
+                                <h5>Vocabulary:</h5>
+                                <div class="vocab-item">
+                                    <strong>Bias:</strong> When a computer program's choices unfairly help or hurt certain people or groups.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="session">
+                            <h4>Session 4: Using Model Cards to Evaluate Models</h4>
+                            <p>Students learn about Model Cards, which share details about computer programs to spot unfairness. They check Model Cards for medical programs, look at how fair the information is, and suggest fair programs for hospitals.</p>
+                            <div class="vocabulary">
+                                <h5>Vocabulary:</h5>
+                                <div class="vocab-item">
+                                    <strong>Model Card:</strong> A document that explains a computer program's information, results, and possible unfairness.
+                                </div>
+                                <div class="vocab-item">
+                                    <strong>Data Representativeness:</strong> How well a program's information includes different people and situations to make fair guesses.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <div class="accordion-header", id="curriculum">
+                        <span class="week-number">5</span>
+                        <h3>Training and Documenting Models</h3>
+                        <span class="accordion-toggle"></span>
+                    </div>
+                    <div class="accordion-content">
+                        <p>Students focus on training machine learning models and documenting their processes to ensure clarity and fairness.</p>
+                        <p class="content-note">These sessions can be customized to match your child's learning style, interests, and pace.</p>
+                        <div class="session">
+                            <h4>Session 1: Training and Saving Models in AI Lab</h4>
+                            <p>Students teach and save computer programs in AI Lab using a zoo dataset. They pick an answer to guess and choose details, making programs to share animal facts based on user choices, and write down their steps.</p>
+                        </div>
+                        <div class="session">
+                            <h4>Session 2: Importing Models and Creating Model Cards</h4>
+                            <p>Students add a trained program to App Lab to start building a zoo app. They make a Model Card to list the program's details, information, and choices, and talk about why Model Cards help make apps clear and fair.</p>
+                        </div>
+                        <div class="session">
+                            <h4>Session 3: Importing Models with Numerical Data</h4>
+                            <p>Students practice adding a Pet Recommender program to App Lab, focusing on programs with number-based information. They test the app for pet suggestions, talk about number vs. group information, and find problems in how the app feels to use.</p>
+                            <div class="vocabulary">
+                                <h5>Vocabulary:</h5>
+                                <div class="vocab-item">
+                                    <strong>Numerical Data:</strong> Information that can be counted or measured, like a pet's size or age.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="session">
+                            <h4>Session 4: Improving User Experience with Model Cards</h4>
+                            <p>Students use Model Cards to make the Pet Recommender app better by updating detail descriptions, adding helpful text, and improving design parts like screens. They talk about how Model Cards help make apps easier to use.</p>
+                            <div class="vocabulary">
+                                <h5>Vocabulary:</h5>
+                                <div class="vocab-item">
+                                    <strong>User Experience:</strong> How easy and fun it is to use an app, based on its design and clear instructions.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <div class="accordion-header">
+                        <span class="week-number">6</span>
+                        <h3>Numerical Predictions in Machine Learning</h3>
+                        <span class="accordion-toggle"></span>
+                    </div>
+                    <div class="accordion-content">
+                        <p>Students learn how to use machine learning to make numerical predictions and evaluate the accuracy of their models.</p>
+                        <p class="content-note">These sessions can be customized to match your child's learning style, interests, and pace.</p>
+                        <div class="session">
+                            <h4>Session 1: Predicting with Numerical Data</h4>
+                            <p>Students do a fun activity pretending there's a zombie outbreak, using number information from another town to guess how many zombies might be in their town. They compare details to find patterns and make guesses.</p>
+                            <div class="vocabulary">
+                                <h5>Vocabulary:</h5>
+                                <div class="vocab-item">
+                                    <strong>Similarity-Based Prediction:</strong> Guessing by comparing new information to existing information with similar details.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="session">
+                            <h4>Session 2: Evaluating Model Accuracy</h4>
+                            <p>Students check their zombie guesses against real information, figuring out how accurate they are by looking at exact matches or close guesses (within 5 or 20). They talk about when 'close enough' guesses are okay or when exact guesses are needed.</p>
+                            <div class="vocabulary">
+                                <h5>Vocabulary:</h5>
+                                <div class="vocab-item">
+                                    <strong>Model Evaluation:</strong> Checking how well a computer program's guesses match real answers.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="session">
+                            <h4>Session 3: Understanding Numerical Data</h4>
+                            <p>Students learn about number information and how it helps computers guess things. Using AI Lab, they look at a safari dataset to guess how many lions are in a park, using graphs to spot connections between details like antelope numbers and lion sightings.</p>
+                            <div class="vocabulary">
+                                <h5>Vocabulary:</h5>
+                                <div class="vocab-item">
+                                    <strong>Scatter Plot:</strong> A graph that shows how two number-based details are related.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="session">
+                            <h4>Session 4: Training Models with Numerical Features</h4>
+                            <p>Students keep exploring the safari dataset in AI Lab, looking at details like temperature or day of the month. They teach a computer to guess lion sightings with at least 80% correct answers, picking the best details based on patterns.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <div class="accordion-header">
+                        <span class="week-number">7</span>
+                        <h3>Customizing Multi-Screen Machine Learning Apps</h3>
+                        <span class="accordion-toggle"></span>
+                    </div>
+                    <div class="accordion-content">
+                        <p>Students explore advanced app development by creating multi-screen applications that integrate machine learning models.</p>
+                        <p class="content-note">These sessions can be customized to match your child's learning style, interests, and pace.</p>
+                        <div class="session">
+                            <h4>Session 1: Customizing App Code and Design</h4>
+                            <p>Students explore a single-screen Raspado Recommender app in App Lab, updating code to collect details using getText() blocks. They change design parts to make the app work well, learning how code and design work together for good guesses.</p>
+                            <div class="vocabulary">
+                                <h5>Vocabulary:</h5>
+                                <div class="vocab-item">
+                                    <strong>getText():</strong> A code tool that grabs what a user types or picks in App Lab.
+                                </div>
+                                <div class="vocab-item">
+                                    <strong>Design Element:</strong> A part of an app's look, like buttons, text boxes, or menus.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="session">
+                            <h4>Session 2: Building Multi-Screen Apps</h4>
+                            <p>Students make a multi-screen Driver Alert app, putting details like weather or time on different screens. They update code and design using Model Card information, test the app, and talk about why multiple screens are good or tricky.</p>
+                            <div class="vocabulary">
+                                <h5>Vocabulary:</h5>
+                                <div class="vocab-item">
+                                    <strong>Multi-Screen App:</strong> An app with different screens to show information or collect answers one at a time.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="session">
+                            <h4>Session 3: Exploring AI Ethics</h4>
+                            <p>Students talk about real and made-up AI examples, spotting when AI is used in good or bad ways. In small groups, they pick an AI ethics topic, watch videos or read articles, and take notes on challenges and what they mean.</p>
+                            <div class="vocabulary">
+                                <h5>Vocabulary:</h5>
+                                <div class="vocab-item">
+                                    <strong>Ethics:</strong> Rules for doing the right thing when building or using AI.
+                                </div>
+                                <div class="vocab-item">
+                                    <strong>AI Ethics:</strong> Making sure AI is fair, clear, and helpful by following good rules.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="session">
+                            <h4>Session 4: Creating an AI Code of Ethics</h4>
+                            <p>Students work in groups to create fair rules based on their research. They combine their ideas into a class 'AI Code of Ethics' (like a slide show or document) for AI makers and lawmakers to use responsibly.</p>
+                            <div class="vocabulary">
+                                <h5>Vocabulary:</h5>
+                                <div class="vocab-item">
+                                    <strong>Code of Ethics:</strong> A list of rules to make sure AI is built and used the right way.
+                                </div>
+                                <div class="vocab-item">
+                                    <strong>Ethical Principle:</strong> A specific rule to fix an AI problem, like making things fair or responsible.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <div class="accordion-header">
+                        <span class="week-number">8</span>
+                        <h3>Creating a Machine Learning App Project</h3>
+                        <span class="accordion-toggle"></span>
+                    </div>
+                    <div class="accordion-content">
+                        <p>Students apply their skills to create a complete machine learning app, from dataset selection to final presentation.</p>
+                        <p class="content-note">These sessions can be customized to match your child's learning style, interests, and pace.</p>
+                        <div class="session">
+                            <h4>Session 1: Exploring Datasets and Training Models</h4>
+                            <p>Students pick a real-world dataset and look at its details and possible answers. They choose an answer to guess, pick at least two details, and teach a computer in AI Lab, writing down their results and saving the program.</p>
+                            <div class="vocabulary">
+                                <h5> Vocabulary:</h5>
+                                <div class="vocab-item">
+                                    <strong>Dataset:</strong> A collection of real information with details and answers used to teach computers.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="session">
+                            <h4>Session 2: Building and Reflecting on the App</h4>
+                            <p>Students add their trained program to App Lab to make a custom app, adding things like a welcome screen, style, and multiple screens. They fill out a Model Card, check for unfairness, and think about what's good, what can be better, and how the app could be used.</p>
+                        </div>
+                        <div class="session">
+                            <h4>Session 3: Refining Issue Statements and Goals</h4>
+                            <p>Students improve their problem statements to focus on users, be broad, and doable. They use a '5 Why's' activity to understand the main problem (like feeling alone) and set clear goals for their app to help the community.</p>
+                            <div class="vocabulary">
+                                <h5>Vocabulary:</h5>
+                                <div class="vocab-item">
+                                    <strong>Issue Statement:</strong> A clear description of a community problem an app will try to fix, focusing on users.
+                                </div>
+                                <div class="vocab-item">
+                                    <strong>Core Issue:</strong> The main problem or need behind an issue, found by asking why it happens.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="session">
+                            <h4>Session 4: Exploring Datasets for App Development</h4>
+                            <p>Students look for datasets that could help their app ideas (like what activities people like). They check datasets for useful details and answers, talk about how information can help make choices or suggestions, and plan how their app will work.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <div class="accordion-header">
+                        <span class="week-number">9</span>
+                        <h3>Designing Surveys for Machine Learning Apps</h3>
+                        <span class="accordion-toggle"></span>
+                    </div>
+                    <div class="accordion-content">
+                        <p>Students learn to design effective surveys to collect data for their machine learning applications.</p>
+                        <p class="content-note">These sessions can be customized to match your child's learning style, interests, and pace.</p>
+                        <div class="session">
+                            <h4>Session 1: Planning Survey Questions</h4>
+                            <p>Students think about Hawa's Club Recommender app and come up with questions to find out which school clubs people might like. They make three questions, decide if they're group or number questions, and plan answer choices to match the goal (club suggestion).</p>
+                        </div>
+                        <div class="session">
+                            <h4>Session 2: Creating and Testing Surveys</h4>
+                            <p>Students use a Google Form template in Code Studio to make a Club Recommender survey, adding their questions with both group and number answers. They ask friends to fill it out, look at the results for patterns, and talk about how to include all kinds of people.</p>
+                            <div class="vocabulary">
+                                <h5>Vocabulary:</h5>
+                                <div class="vocab-item">
+                                    <strong>Survey:</strong> A way to collect information from people to teach a computer.
+                                </div>
+                                <div class="vocab-item">
+                                    <strong>Data Trends:</strong> Patterns in survey answers that help a computer make guesses.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="session">
+                            <h4>Session 3: Importing Survey Data</h4>
+                            <p>Students learn to view survey answers in Google Sheets and save them as a CSV file. They upload Kim's Club Recommender survey to AI Lab, rename columns clearly, and teach a computer to get at least 70% correct using a few details, writing their steps in a Model Card.</p>
+                            <div class="vocabulary">
+                                <h5>Vocabulary:</h5>
+                                <div class="vocab-item">
+                                    <strong>CSV File:</strong> A file that stores information in a simple way for computers to use.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="session">
+                            <h4>Session 4: Cleaning and Validating Data</h4>
+                            <p>Students check Isaac's survey answers, fix mistakes in Google Sheets to work with AI Lab, and upload the clean information. They make sure it works and talk about when it's okay to change answers to improve guesses without making things unfair.</p>
+                            <div class="vocabulary">
+                                <h5>Vocabulary:</h5>
+                                <div class="vocab-item">
+                                    <strong>Data Cleaning:</strong> Fixing or removing mistakes in information so a computer can use it.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <div class="accordion-header">
+                        <span class="week-number">10</span>
+                        <h3>Troubleshooting Machine Learning Models</h3>
+                        <span class="accordion-toggle"></span>
+                    </div>
+                    <div class="accordion-content">
+                        <p>Students develop skills to diagnose and fix issues in machine learning models, ensuring accuracy and fairness.</p>
+                        <p class="content-note">These sessions can be customized to match your child's learning style, interests, and pace.</p>
+                        <div class="session">
+                            <h4>Session 1: Diagnosing Model Issues</h4>
+                            <p>Students look at survey information from a pretend team (Zoey, Nico, Isaac, Kim) in AI Lab to figure out why their Club Recommender isn't working well. They find problems like bad detail choices or unfair information and write down fixes.</p>
+                            <div class="vocabulary">
+                                <h5>Vocabulary:</h5>
+                                <div class="vocab-item">
+                                    <strong>Feature Selection:</strong> Picking the right details to make a computer's guesses better.
+                                </div>
+                                <div class="vocab-item">
+                                    <strong>Data Bias:</strong> When survey information unfairly focuses on some people, making guesses wrong.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="session">
+                            <h4>Session 2: Strategies for Accurate Models</h4>
+                            <p>Students talk about ways to avoid information problems, like asking all kinds of people, and help Hawa plan her survey. They help Isaac find other datasets for a Loneliness Score app, pick details for good guesses, and explain what the app can and can't do.</p>
+                            <div class="vocabulary">
+                                <h5>Vocabulary:</h5>
+                                <div class="vocab-item">
+                                    <strong>Intended Uses and Limitations:</strong> Parts of a Model Card that explain what a program is for and what it might not do well.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="session">
+                            <h4>Session 3: Importing and Setting Up the App</h4>
+                            <p>Students add the Club Recommender program to App Lab and make sure it works. They update detail text in Design Mode to match survey questions, using the Model Card for accuracy, and start making the app easy to use.</p>
+                            <div class="vocabulary">
+                                <h5>Vocabulary:</h5>
+                                <div class="vocab-item">
+                                    <strong>Design Mode:</strong> A tool in App Lab to change how an app looks and works.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="session">
+                            <h4>Session 4: Enhancing App Usability</h4>
+                            <p>Students add a welcome screen with a style, text about the app's goal, accuracy, and information collection, and a 'Next' button with an image and OnEvent block. They test the app, check it meets goals, and try more design ideas.</p>
+                            <div class="vocabulary">
+                                <h5>Vocabulary:</h5>
+                                <div class="vocab-item">
+                                    <strong>OnEvent Block:</strong> A code block in App Lab that makes things happen when a user does something, like clicking.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <div class="accordion-header">
+                        <span class="week-number">11</span>
+                        <h3>Designing an AI App for Social Good</h3>
+                        <span class="accordion-toggle"></span>
+                    </div>
+                    <div class="accordion-content">
+                        <p>Students focus on creating AI apps that address community issues, emphasizing user needs and ethical design.</p>
+                        <p class="content-note">These sessions can be customized to match your child's learning style, interests, and pace.</p>
+                        <div class="session">
+                            <h4>Session 1: Defining the Issue and Planning the App</h4>
+                            <p>Students find a community problem using a '5 Why's' method to make a clear, user-focused problem statement. They think of app ideas that make choices, suggestions, or guesses, and plan how to collect information from different people.</p>
+                            <div class="vocabulary">
+                                <h5>Vocabulary:</h5>
+                                <div class="vocab-item">
+                                    <strong>Machine Learning App:</strong> An app that uses information to make choices, suggestions, or guesses to fix a problem.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="session">
+                            <h4>Session 2: Collecting Data and Developing the App</h4>
+                            <p>Students make and share a survey to collect information, teach a computer in AI Lab, and create a Model Card. They add the program to App Lab, build an easy-to-use app, test it with five people, and prepare a presentation about the app's goal, information, design, and ways to improve.</p>
+                        </div>
+                        <div class="session">
+                            <h4>Session 3: Understanding Image Classification</h4>
+                            <p>Students learn how computers sort pictures by making a project game that guesses Pokémon types (like Fire or Water) based on how they look. They talk about how details like color and shape help the computer guess.</p>
+                            <div class="vocabulary">
+                                <h5>Vocabulary:</h5>
+                                <div class="vocab-item">
+                                    <strong>Image Classification:</strong> When a computer sorts pictures into groups based on what they show.
+                                </div>
+                                <div class="vocab-item">
+                                    <strong>Visual Feature:</strong> Something in a picture, like color or shape, that helps a computer guess.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="session">
+                            <h4>Session 4: Building the Pokémon Game</h4>
+                            <p>Students follow a worksheet to make the Pokémon classifier game, teaching the computer with sample Pokémon pictures and testing how well it guesses. They think about how choosing details affects guesses and talk about possible unfairness in picture-based programs.</p>
+                            <div class="vocabulary">
+                                <h5>Vocabulary:</h5>
+                                <div class="vocab-item">
+                                    <strong>Training Data:</strong> Pictures and answers used to teach a computer to spot patterns.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <div class="accordion-header">
+                        <span class="week-number">12</span>
+                        <h3>Smart Classroom Assistant</h3>
+                        <span class="accordion-toggle"></span>
+                    </div>
+                    <div class="accordion-content">
+                        <p>Students develop a text-based AI assistant for classroom tasks, focusing on text recognition and inclusivity.</p>
+                        <p class="content-note">These sessions can be customized to match your child's learning style, interests, and pace.</p>
+                        <div class="session">
+                            <h4>Session 1: Designing a Text-Based Assistant</h4>
+                            <p>Students start a project to make a smart classroom assistant that understands text commands to control things like lights or a projector. They think of commands and talk about how text details help the computer work.</p>
+                            <div class="vocabulary">
+                                <h5>Vocabulary:</h5>
+                                <div class="vocab-item">
+                                    <strong>Text Recognition:</strong> When a computer understands and sorts text to do tasks.
+                                </div>
+                                <div class="vocab-item">
+                                    <strong>Digital Assistant:</strong> An AI tool that follows user commands, often using text or voice.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="session">
+                            <h4>Session 2: Implementing and Testing the Assistant</h4>
+                            <p>Students use a worksheet to code the assistant, teaching it with sample text commands and testing what it does. They check how well it works and talk about making sure commands are fair and include everyone.</p>
+                            <div class="vocabulary">
+                                <h5>Vocabulary:</h5>
+                                <div class="vocab-item">
+                                    <strong>Supervised Learning:</strong> Teaching a computer with examples that have answers to sort things.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="session">
+                            <h4>Session 3: Exploring Sound Recognition</h4>
+                            <p>Students start a project to make a game that recognizes sung music notes using a ready-to-use sound program. They talk about how sound information is different from number or group information and think of ways to make the game fun.</p>
+                            <div class="vocabulary">
+                                <h5>Vocabulary:</h5>
+                                <div class="vocab-item">
+                                    <strong>Sound Recognition:</strong> When a computer finds patterns in sounds, like music notes.
+                                </div>
+                                <div class="vocab-item">
+                                    <strong>Pretrained Model:</strong> A computer program already taught and ready to use for tasks like sound spotting.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="session">
+                            <h4>Session 4: Building and Customizing the Game</h4>
+                            <p>Students follow a worksheet to build the Voice Tuner game, adding the sound program and designing it with visuals (like characters reacting to notes). They test the game and think about problems, like background noise messing up guesses.</p>
+                            <div class="vocabulary">
+                                <h5>Vocabulary:</h5>
+                                <div class="vocab-item">
+                                    <strong>Pitch Estimation:</strong> Figuring out the sound's note by checking its frequency.
+                                </div>
+                                <div class="vocab-item">
+                                    <strong>User Interface:</strong> The look and feel of a game that makes it fun and easy to use.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <div class="accordion-header">
+                        <span class="week-number">13</span>
+                        <h3>Make Me Happy Character</h3>
+                        <span class="accordion-toggle"></span>
+                    </div>
+                    <div class="accordion-content">
+                        <p>Students create a character that reacts to text sentiment, learning about sentiment analysis and ethical AI design.</p>
+                        <p class="content-note">These sessions can be customized to match your child's learning style, interests, and pace.</p>
+                        <div class="session">
+                            <h4>Session 1: Understanding Sentiment Analysis</h4>
+                            <p>Students start a project to make a character that smiles for nice words and cries for mean ones, using a tool to understand text feelings. They talk about how text feelings connect to fair AI and think of kind and unkind phrases to teach the computer.</p>
+                            <div class="vocabulary">
+                                <h5>Vocabulary:</h5>
+                                <div class="vocab-item">
+                                    <strong>Sentiment Analysis:</strong> A tool that sorts text as happy, sad, or neutral.
+                                </div>
+                                <div class="vocab-item">
+                                    <strong>Text Feature:</strong> Something in text, like word choice, that shows its feeling.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="session">
+                            <h4>Session 2: Creating the Sentiment Character</h4>
+                            <p>Students use a worksheet to code the character, teaching it with sample phrases and testing how it reacts. They think about making sure the computer doesn't misunderstand neutral words and talk about making the character fair for everyone.</p>
+                            <div class="vocabulary">
+                                <h5>Vocabulary:</h5>
+                                <div class="vocab-item">
+                                    <strong>Ethical AI:</strong> Building AI that is fair, clear, and kind to users.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="session">
+                            <h4>Session 3: Predicting Ball Trajectories</h4>
+                            <p>Students start a project game where a computer guesses where a bouncing ball will land. They talk about number details like ball speed and angle and plan how the game will look.</p>
+                            <div class="vocabulary">
+                                <h5>Vocabulary:</h5>
+                                <div class="vocab-item">
+                                    <strong>Regression:</strong> A way for a computer to guess numbers, like where a ball will land.
+                                </div>
+                                <div class="vocab-item">
+                                    <strong>Numerical Feature:</strong> A number detail, like speed or angle, used to make guesses.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="session">
+                            <h4>Session 4: Building and Testing the Game</h4>
+                            <p>Students follow a worksheet to make the Catch the Ball game, teaching the computer with sample ball paths and testing its guesses. They check how close the guesses are and talk about uses, like in sports, and what the program might not do well.</p>
+                            <div class="vocabulary">
+                                <h5>Vocabulary:</h5>
+                                <div class="vocab-item">
+                                    <strong>Model Accuracy:</strong> How close a computer's number guesses are to the real answers.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <div class="accordion-header">
+                        <span class="week-number">14</span>
+                        <h3>Snap! Card Game and Recommender Systems</h3>
+                        <span class="accordion-toggle"></span>
+                    </div>
+                    <div class="accordion-content">
+                        <p>Students build an image-based card game and a book recommender, exploring model robustness and recommendation systems.</p>
+                        <p class="content-note">These sessions can be customized to match your child's learning style, interests, and pace.</p>
+                        <div class="session">
+                            <h4>Session 1: Designing an Image-Based Card Game</h4>
+                            <p>Students start a project card game that recognizes card pictures by sorting them. They talk about how details like shape or color help sort cards and plan the game's fun parts.</p>
+                            <div class="vocabulary">
+                                <h5>Vocabulary:</h5>
+                                <div class="vocab-item">
+                                    <strong>Model Robustness:</strong> A computer's ability to guess right even if things change, like lighting.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="session">
+                            <h4>Session 2: Implementing and Testing the Game</h4>
+                            <p>Students use a worksheet to code the Snap! game, teaching the computer with card pictures and testing how well it recognizes them. They think about problems, like different lighting affecting guesses, and talk about ways to make the program stronger.</p>
+                        </div>
+                        <div class="session">
+                            <h4>Session 3: Planning a Recommendation System</h4>
+                            <p>Students start a project to make a school librarian that suggests books based on number information (like age or reading level). They talk about how number details help make suggestions and plan the librarian's look.</p>
+                            <div class="vocabulary">
+                                <h5>Vocabulary:</h5>
+                                <div class="vocab-item">
+                                    <strong>Recommendation System:</strong> A computer program that suggests things, like books, based on user information.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="session">
+                            <h4>Session 4: Building and Evaluating the Recommender</h4>
+                            <p>Students follow a worksheet to code the librarian, teaching it with sample information and testing its book suggestions. They make a Model Card to explain the program and talk about making sure suggestions work for all students.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <div class="accordion-header">
+                        <span class="week-number">15</span>
+                        <h3>Tourist Info App and Storyteller Generator</h3>
+                        <span class="accordion-toggle"></span>
+                    </div>
+                    <div class="accordion-content">
+                        <p>Students create a multi-screen tourist app and a generative AI storyteller, focusing on training bias and inclusive design.</p>
+                        <p class="content-note">These sessions can be customized to match your child's learning style, interests, and pace.</p>
+                        <div class="session">
+                            <h4>Session 1: Designing a Multi-Screen Recommendation App</h4>
+                            <p>Students start a project to make a tourist attraction suggester based on what people like. They think of text details (like favorite activities) and plan an app with multiple screens to make it easy to use.</p>
+                            <div class="vocabulary">
+                                <h5>Vocabulary:</h5>
+                                <div class="vocab-item">
+                                    <strong>Training Bias:</strong> When a computer's suggestions are wrong because the information isn't fair or complete.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="session">
+                            <h4>Session 2: Developing and Testing the App</h4>
+                            <p>Students use a worksheet to code the Tourist Info app, teaching it with sample interest information and testing suggestions across screens. They talk about unfair information and how to make suggestions work for all kinds of tourists.</p>
+                        </div>
+                        <div class="session">
+                            <h4>Session 3: Introduction to Generative AI</h4>
+                            <p>Students learn about generative AI by starting a project that makes new stories based on user ideas. They talk about how computers create text and think of story themes to make the project exciting.</p>
+                            <div class="vocabulary">
+                                <h5>Vocabulary:</h5>
+                                <div class="vocab-item">
+                                    <strong>Generative AI:</strong> AI that makes new things, like stories or text, based on what it's learned.
+                                </div>
+                                <div class="vocab-item">
+                                    <strong>Language Model:</strong> A computer program that creates or understands text, used for storytelling.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="session">
+                            <h4>Session 4: Building and Reflecting on the Storyteller</h4>
+                            <p>Students follow a worksheet to code the Storyteller, using a ready-to-use text program to make stories and designing the look. They test the app, make a Model Card, and talk about making sure stories are appropriate and include everyone.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Download Curriculum Section -->
+    <section class="download-section">
+        <div class="container">
+            <h2>Download the Full <span class="text-highlight">Curriculum</span></h2>
+            <p>Get the complete 15-week AI & Machine Learning course details in a convenient PDF format.</p>
+            <a href="assets/SparkNix AI & ML Curriculum for Kids.pdf" class="btn-download" download>Download Curriculum</a>
+        </div>
+    </section>
+
+    <!-- Schedule Section -->
+    <section class="schedule-section" id="benefits">
+        <div class="container">
+            <h2>Fully <span class="text-highlight">Customizable</span> Schedules</h2>
+            <p class="section-intro">Need more flexibility? Students can choose 3, 4, 5, 6, or 7 sessions per week to fit their schedule. We'll tailor the pace to meet your child's needs!</p>
+            <div class="tag-pills">
+                <div class="tag-pill">Fun & Engaging</div>
+                <div class="tag-pill">Real-World Impact</div>
+                <div class="tag-pill">Future-Ready Skills</div>
+                <div class="tag-pill">Flexible & Personalized</div>
+            </div>
+            <div class="benefits-grid">
+                <div class="benefit-card">
+                    <div class="icon-container">
+                        <div class="icon help-icon"></div>
+                    </div>
+                    <h3>Help Others</h3>
+                    <p>Design apps that can make a difference in your community.</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="icon-container">
+                        <div class="icon confidence-icon"></div>
+                    </div>
+                    <h3>Build Confidence</h3>
+                    <p>Share your work and become a great communicator.</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="icon-container">
+                        <div class="icon ready-icon"></div>
+                    </div>
+                    <h3>Future Ready</h3>
+                    <p>Gain skills that top schools and companies love.</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="icon-container">
+                        <div class="icon schedule-icon"></div>
+                    </div>
+                    <h3>Flexible Schedule</h3>
+                    <p>Choose the number of sessions that work best for your child.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="projects-section">
+        <div class="container">
+            <h2>Exciting <span class="text-highlight">Projects</span> Your Child Will Build</h2>
+            <p class="section-intro">Throughout the course, students will create amazing AI-powered applications that showcase their skills and creativity.</p>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <img src="https://repository-images.githubusercontent.com/206370448/dcb2aa80-f5f5-11e9-8b62-5e94b6a077ea" alt="Pokémon Image Classifier">
+                    <h3>Pokémon Image Classifier</h3>
+                    <p>Train an AI to identify different Pokémon species from images.</p>
+                </div>
+                <div class="project-card">
+                    <img src="https://images.ctfassets.net/2lpsze4g694w/1QupFsePhmC3zTxIrCNvA1/9c34a792d4670ed85c3781b761b646db/Smart-Classroom.png" alt="Smart Classroom Assistant">
+                    <h3>Smart Classroom Assistant</h3>
+                    <p>Create an AI assistant that helps organize classroom activities.</p>
+                </div>
+                <div class="project-card">
+                    <img src="https://i.ytimg.com/vi/h7pTb5Ma8Hs/hq720.jpg?sqp=-oaymwE7CK4FEIIDSFryq4qpAy0IARUAAAAAGAElAADIQj0AgKJD8AEB-AH-CYACyAWKAgwIABABGEwgMCh_MA8=&rs=AOn4CLAPhLCiu3RcJ0QhF6-tAXh5VjpdqQ" alt="Voice Tuner Game">
+                    <h3>Voice Tuner Game</h3>
+                    <p>Design a game that responds to voice commands and pitch.</p>
+                </div>
+                <div class="project-card">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3bxzA9o_DTEaWyXrvpmZya_bHS8ru6gdZpw&s" alt="Make Me Happy Character">
+                    <h3>Make Me Happy Character</h3>
+                    <p>Build an AI character that responds to sentiment in text input.</p>
+                </div>
+                <div class="project-card">
+                    <img src="https://media.istockphoto.com/id/1026132870/vector/smiling-preschool-girl-and-boy-kids-playing-baseball-game-holding-catching-and-throwing-ball.jpg?s=612x612&w=0&k=20&c=WDHkRhty4iFNodQ17s27e31A_Vy3TNVo8l_wiZW27Pw=" alt="Catch the Ball Game">
+                    <h3>Catch the Ball Game</h3>
+                    <p>Build a game where AI predicts the trajectory of a moving ball.</p>
+                </div>
+                <div class="project-card">
+                    <img src="https://i.etsystatic.com/13563256/c/1851/1470/492/250/il/9aafe5/6143658980/il_340x270.6143658980_n0ay.jpg" alt="Snap! Card Game">
+                    <h3>Snap! Card Game</h3>
+                    <p>Create a card game that recognizes and categorizes different cards.</p>
+                </div>
+                <div class="project-card">
+                    <img src="https://img.freepik.com/free-vector/school-library-interior-with-children-group_1308-73650.jpg" alt="School Library Recommender">
+                    <h3>School Library Recommender</h3>
+                    <p>Design an AI system that recommends books based on student preferences.</p>
+                </div>
+                <div class="project-card">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQyFGM0A6wfTYhABdu_S_fKO_qY11I_7eQcgQ&s" alt="Tourist Info App">
+                    <h3>Tourist Info App</h3>
+                    <p>Create an app that recommends tourist destinations based on preferences.</p>
+                </div>
+                <div class="project-card">
+                    <img src="https://easy-peasy.ai/cdn-cgi/image/quality=80,format=auto,width=700/https://media.easy-peasy.ai/484498ab-5c45-447e-95f4-c2b66279d0a6/507145f6-e1b5-4e21-819f-b920a130c957.png" alt="Storyteller Generator">
+                    <h3>Storyteller Generator</h3>
+                    <p>Build an AI that creates unique stories based on user inputs.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials-section" id="testimonials">
+        <div class="container">
+            <h2>What <span class="text-highlight">Parents</span> Are Saying</h2>
+            <p class="section-intro">Hear how SparkNix is preparing children for an AI-powered future by turning screen time into valuable learning experiences.</p>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="stars">★★★★★</div>
+                    <p class="quote">"My son used to spend hours playing video games with no clear direction. After joining SparkNix, he's not just consuming technology – he's creating it! Now he understands how AI works and is building his own projects. It's incredible to see him develop skills that will give him a real advantage in this fast-changing world."</p>
+                    <div class="author">Sarah Johnson</div>
+                    <div class="relation">Parent of Alex, 12</div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="stars">★★★★★</div>
+                    <p class="quote">"In today's AI-driven world, I wanted my daughter to be more than just a passive user of technology. SparkNix has given her the confidence to understand and work with AI systems. She's now thinking about problems in ways I never did at her age, and she's actually excited about her future career possibilities!"</p>
+                    <div class="author">Michael Chen</div>
+                    <div class="relation">Parent of Lily, 13</div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="stars">★★★★★</div>
+                    <p class="quote">"We were worried our son was wasting his potential on mindless screen time. SparkNix transformed that screen time into valuable learning. Now he's not just playing games – he's learning how to create them and understand the AI behind them. These are the skills that will keep him relevant in tomorrow's job market."</p>
+                    <div class="author">Priya Patel</div>
+                    <div class="relation">Parent of Aiden, 11</div>
+                </div>
+            </div>
+            <div class="video-testimonial">
+                <div class="video-container">
+                    <video controls poster="https://via.placeholder.com/400x711">
+                        <source src="assets/testimonial.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <div class="video-controls">
+                        <div class="time">0:00</div>
+                        <div class="progress-bar">
+                            <div class="progress"></div>
+                        </div>
+                        <div class="volume">🔊</div>
+                        <div class="fullscreen">⤢</div>
+                    </div>
+                </div>
+                <p class="video-quote">"SparkNix turned my son's screen time into discovery time. He's not just consuming tech—he's building it, understanding it, and growing with it."</p>
+                <div class="video-author">— Amanda Torres, Parent</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action Section -->
+    <section class="cta-section" id="enroll">
+        <div class="container">
+            <h2>Ready to Enroll?</h2>
+            <p>Start your child's journey into the exciting world of AI and tech!</p>
+            <div class="cta-features">
+                <div class="cta-feature">
+                    <div class="number">15</div>
+                    <div class="feature-text">Week comprehensive curriculum</div>
+                </div>
+                <div class="cta-feature">
+                    <div class="number">4</div>
+                    <div class="feature-text">Customizable sessions weekly</div>
+                </div>
+                <div class="cta-feature">
+                    <div class="number">Expert</div>
+                    <div class="feature-text">Instructors & mentors</div>
+                </div>
+            </div>
+            <a href="https://wa.me/923099224477?text=Hi!%20I'm%20interested%20in%20enrolling%20my%20child%20in%20the%2015-week%20Kids'%20AI%20%26%20Machine%20Learning%20Course%20offered%20by%20Sparknix.%20Could%20you%20please%20share%20details%20about%20the%20curriculum%2C%20class%20timings%2C%20and%20how%20to%20get%20started%3F" class="btn-enroll-action">Enroll Now</a>
+        </div>
+        <div class="background-shapes">
+            <div class="shape shape-5"></div>
+            <div class="shape shape-6"></div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="assets/sparknix-logo.png" alt="SparkNix Logo">
+                    <div class="footer-brand">
+                        <h3>SparkNix</h3>
+                        <p>Ignite your potential, nix the limits. Empowering kids with AI and coding skills for the future.</p>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-section">
+                        <h4>Quick Links</h4>
+                        <ul>
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#curriculum">Curriculum</a></li>
+                            <li><a href="#benefits">Benefits</a></li>
+                            <li><a href="#features">Features</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-section">
+                        <h4>Contact</h4>
+                        <p class="contact-info">Have questions? Reach out to us directly through WhatsApp by clicking the Enroll button!</p>
+                        <a href="https://wa.me/923099224477?text=Hi!%20I'm%20interested%20in%20enrolling%20my%20child%20in%20the%2015-week%20Kids'%20AI%20%26%20Machine%20Learning%20Course%20offered%20by%20Sparknix.%20Could%20you%20please%20share%20details%20about%20the%20curriculum%2C%20class%20timings%2C%20and%20how%20to%20get%20started%3F" class="btn-contact">Contact Us via WhatsApp</a>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>© 2025 SparkNix. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
